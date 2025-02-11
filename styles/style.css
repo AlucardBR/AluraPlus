@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{ 
+    --fonte-primaria: "Inter", serif;
+    --cor-botao: #167BF7;
+    --cor-1: #FFFFFF;
+    --cor-2: #C0C0C0;
+    --cor-3: #00030C;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--cor-3);
+    color: var(--cor-1);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+}
+
+.principal {
+    background-image: url("/assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_caixa {
+    margin: 0 10rem;
+}
+
+.container_titulo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.container_combo {
+    margin: 1rem 0 2rem 0;
+}
+
+.container_botao {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--cor-botao);
+    color: var(--cor-1);
+    display: block;
+    margin-bottom: 1rem;
+
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-1);
+}
+
+.container_aviso {
+    color: var(--cor-2);
+    font-size: 12px;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 12rem;
+}
+
+.secundario_imagem {
+    width: 80%;
+
+}
+
+.descricao_titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.descricao_texto {
+    color: var(--cor-2);
+}
+
+.secundario_botao {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.container_descricao {
+    padding: 2rem;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos_titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivos_lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 4rem 0;
+    gap: 40px
+}
+
+.lista_item {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodape_logo{
+    margin-bottom: 2rem;
+}  
+
+.rodape_lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.rodape_links a{
+    text-decoration: none;
+    color: var(--cor-1);
+
+}
+
+.rodape_texto{
+    color: var(--cor-2); 
+    font-size: .8rem;
+    text-align: center;
+    margin: 0 0 4rem 0; 
+    width: 50%;
+}
+
+.rodape_texto_item {
+    margin: 1rem;
+}
